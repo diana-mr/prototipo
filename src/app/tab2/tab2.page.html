@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-text color="primary">
+    <h2>Todos los géneros</h2>
+  </ion-text>
+  </ion-card>
+
+  <ion-card> 
+    <ion-card-content>
+     <ion-list>
+       <ion-item mode="md" button *ngFor="let g of genders">
+      <ion-label>
+       {{g.name}}
+      </ion-label> 
+       </ion-item>
+     </ion-list>
+    </ion-card-content> 
+   </ion-card>
+  
+</ion-content>
